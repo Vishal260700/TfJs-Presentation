@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TensorflowJs-Vishal-Agarwal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="shortcut icon" type="image/jpg" href="images/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<style>
+	button{
+		color: white;
+		background: #EB984E;
+	}
+	canvas{
+		margin-left: 30%;
+		border-radius: 20px;
+	}
+	h1{
+		font-size: 30px;
+		position: absolute;
+		top: 75%;
+		left: 25%;
+		color: white;
+	}
+	i{
+		color:#EB984E; 
+	}
+	table tr td{
+		font-size: 34px;
+		text-align: center;
+	}
+	table{
+		border: 1px solid #D7DBDD;
+		border-radius: 10px;
+	}
+	h3{
+		text-align: center;
+		color: white;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	#head{
+		color: black;
+	}
+</style>
+<body>
+	<div class="navbar">
+	  <a href="./index.html">Home</a>
+	  <a href="./Tutorials/index.html">Tutorials</a>
+	  <a href="https://vishal260700.github.io/dist/index.html">About Me</a>
+	</div>
+	<div class="col-md-3">
+				<div class="col-md-12" style="margin-top: 15px;margin-bottom: 15px;">
+					<img src="images/profile.jpg" style="width:100%;height:100%; border-radius: 10px;">
+				</div>
+				<div class="col-md-12">
+					<ul class="list-group">
+						<li class="list-group-item"><i class="fas fa-user" style="margin:5px;"></i>Name : Vishal Agarwal</li>
+						<li class="list-group-item"><i class="fas fa-envelope" style="margin:5px;"></i>E-mail ID : vishal260700@gmail.com</li>
+						<li class="list-group-item"><i class="fas fa-pen-alt" style="margin:5px;"></i>Designation : 2nd year Undergraduate </li>
+						<li class="list-group-item"><i class="fas fa-building" style="margin:5px;"></i>College : IIT Kanpur</li>
+						<li class="list-group-item"><i class="fas fa-info-circle" style="margin:5px;"></i>About : Web Developer, App Developer, Blockchain Developer, Machine learning and Deep Learning Enthusiast.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="col-md-12">
+					<h3 id="head"><center>This is my project using TensorflowJs lib which was proposed by Google in Google-IO-2018.It contains some of the basic ML models.Try out this model and do checkout the tutorial section for more in-depth insights of various models.</center></h3>
+				</div>
+				<div class="col-md-12">
+					<a href="./models/Color_Classifier/">
+					<div class="col-md-4" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;margin-right: 10px;">
+						<h3>Color Classifier</h3>
+					</div>
+					</a>
+					<a href="./models/XOR/">
+					<div class="col-md-3" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;margin-right: 30px;margin-left: 20px;">
+						<h3>XOR</h3>
+					</div>
+					</a>
+					<a href="./models/Dynamic-Regression/">
+					<div class="col-md-4" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;">
+						<h3>Dynamic Regression</h3>
+					</div>
+					</a>
+					<a href="./models/Wine Quality/">
+					<div class="col-md-12" style="height: 20px;"></div>
+					<div class="col-md-4" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;margin-right: 10px;">
+						<h3>Wine Quality Predictor</h3>
+					</div>
+					</a>
+					<a href="./models/Regression/1d">
+					<div class="col-md-3" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;margin-right: 30px;margin-left: 20px;">
+						<h3>1D Regression</h3>
+					</div>
+					</a>
+					<a href="./models/Interactive-Regression/">
+					<div class="col-md-4" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;">
+						<h3>Interactive Regression</h3>
+					</div>
+					</a>
+					<a href="./models/Regression/2d">
+					<div class="col-md-12" style="height: 20px;"></div>
+					<div class="col-md-4" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;margin-right: 10px;">
+						<h3>2D Regression</h3>
+					</div>
+					</a>
+					<a href="./models/Regression/3d">
+					<div class="col-md-3" style="background: rgb(245, 176, 65 , 0.7);border-radius: 10px;margin-right: 30px;margin-left: 20px;">
+						<h3>3D Regression</h3>
+					</div>
+					</a>
+				</div>
+			</div>
+</body>
+</html>

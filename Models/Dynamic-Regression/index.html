@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"> </script>
+	<link rel="shortcut icon" type="image/jpg" href="../../images/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="navbar">
+	  <a href="../../">Home</a>
+	  <a href="../../Tutorials/">Tutorials</a>
+	  <a href="https://vishal260700.github.io/dist/index.html">About Me</a>
+	</div>
+
+	<div class="col-md-12">
+		<h1 style="text-align: center;"><u>Dynamic Regression</u></h1>
+	</div>
+
+	<div class="col-md-12">
+		<h4 style="text-align: center;" id="model1">Model is loading...</h4>
+	</div>
+
+
+	<div class="col-md-6">
+	<div style="padding:10px">
+        <canvas id="myChartTrain"></canvas>
+    </div>
+	</div>
+
+
+	<div class="col-md-6">
+	<div style="padding:10px">
+        <canvas id="myChartTest"></canvas>
+    </div>
+	</div>
+
+	<div class="col-md-12">
+		<h4 style="text-align: center;">For insights navigate to the text-based tutorial section for an in-depth understanding of the model.</h4>
+		<center><button class="btn btn-danger" style="text-align: center;">Tutorials</button></center>
+	</div>
+
+
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>

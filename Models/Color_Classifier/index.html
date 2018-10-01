@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Classifier</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+	<link rel="shortcut icon" type="image/jpg" href="../../images/logo.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="navbar">
+	  <a href="../../">Home</a>
+	  <a href="../../Tutorials/">Tutorials</a>
+	  <a href="https://vishal260700.github.io/dist/index.html">About Me</a>
+	</div>
+	<div class="col-md-12">
+		<h1 style="text-align: center;"><u>Color Classifier</u></h1>
+	</div>
+	<div class="col-md-4"></div>
+	<div class="col-md-4" id="content2">
+		<h3 style="text-align: center;">-:Instructions:-</h3>
+		<ol class="list-group">
+			<li class="list-group-item">
+				Train the model and wait for 1-2 min for the model to get trained.
+			</li>
+			<li class="list-group-item">
+				After training you can tweek the r,g,b values of the color displayed on the left of the screen.
+			</li>
+			<li class="list-group-item">
+				The color will be predicted by the model with a certain accuracy.
+			</li>
+		</ol>
+		<h4 style="text-align: center;">
+			For insights navigate to the text-based tutorial section for an in-depth understanding of the model.
+		</h4>
+		<center>
+		<button style="text-align: center;margin-top: 20px;" class="btn btn-danger">Tutorials</button>
+		</center>
+	</div>
+	<div class="col-md-4" id = "content">
+	<table class="table">
+		<tr>
+			<td><p id="status">Train the model...</p></td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="train();" class="btn btn-primary">Train Model</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="accuracy">Model Accuracy - </p>				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id = "loss">Model Loss - </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="predict();" class="btn btn-success">Start Predicting</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="prediction"> Model Prediction - </p>
+			</td>
+		</tr>
+	</table>
+</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
+

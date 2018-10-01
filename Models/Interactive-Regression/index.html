@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TensorflowJs</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"> </script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/jpg" href="../../images/logo.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="navbar">
+	  <a href="../../">Home</a>
+	  <a href="../../Tutorials/">Tutorials</a>
+	  <a href="https://vishal260700.github.io/dist/index.html">About Me</a>
+	</div>
+
+	<div class="col-md-12">
+		<h1 style="text-align: center;"><u>Interactive Regression</u></h1>
+	</div>
+
+	<div class="col-md-12" style="margin-top: 20px;">
+		<center>
+		<table class="table" style="width: 1000px;">
+			<tr>
+				<td>
+					<p class="form-control" style="text-align: center;">X : </p>
+				</td>
+				<td>
+					<input type="number" id="x" class="form-control">
+				</td>
+				<td>
+					<p class="form-control" style="text-align: center;">Y : </p>
+				</td>
+				<td>
+					<input type="number" id="y" class="form-control">
+				</td>
+				<td>
+					<input type="button" id="append" value="submit" class="btn btn-primary">
+				</td>
+			</tr>
+		</table>
+	</center>
+	</div>
+
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div style="padding:10px">
+	        <canvas id="myChart"></canvas>
+	    </div>		
+	</div>
+	<div class="col-md-2"></div>
+
+	<div class="col-md-12">
+		<h4 style="text-align: center;">For insights navigate to the text-based tutorial section for an in-depth understanding of the model.</h4>
+		<center><button class="btn btn-danger" style="text-align: center;">Tutorials</button></center>
+	</div>
+
+
+</body>
+<script type="text/javascript" src="./app.js"></script>
+
+</html>
