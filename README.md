@@ -11,3 +11,5 @@ Browser based ML using TfJs by Google.
 1. P5.Js
 2. TensorflowJs.
 3. Chart.Js
+
+Webpage for all models - http://www.vishalagarwal.ml/
